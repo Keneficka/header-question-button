@@ -12,7 +12,7 @@
     }
 </style>
 
-<#if coreNode.nodeType == "board">
+<#if (coreNode.nodeType == "board") && (coreNode.discussionStyle == "forum") && (coreNode.permissions.hasPermission("create_thread"))>
     <#assign sourceBoard = coreNode.id/>
     <#assign postURL = "/t5/forums/postpage/choose-node/true/board-id/" + sourceBoard + "?source=header" />
 <#else>

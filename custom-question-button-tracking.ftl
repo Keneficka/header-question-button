@@ -19,7 +19,7 @@
 
             postBtnSpan.addEventListener('click', function() {
                 var userContent = ed.getContent();
-                var newContent = userContent + '<div data-tracking-ak="headerbuttontrackingcode" style="display: none;"></div>';
+                var newContent = userContent + '<font color="headerbuttontrackingcode">&nbsp;</font>';
                 ed.setContent(newContent);
 	        }, false);
 

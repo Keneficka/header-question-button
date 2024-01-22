@@ -20,5 +20,5 @@
 </#if>
 
 <div class="ask-button-ak" id="ask-button-ak">
-    <a href="${postURL}" target="_blank" class="lia-button lia-button-primary" id=>Ask a Question</a>
+    <a href="${postURL}" target="_blank" class="lia-button lia-button-primary">Start a topic</a>
 </div>

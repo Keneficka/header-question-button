@@ -15,6 +15,9 @@
 <#if (coreNode.nodeType == "board") && (coreNode.discussionStyle == "forum") && (coreNode.permissions.hasPermission("create_thread"))>
     <#assign sourceBoard = coreNode.id/>
     <#assign postURL = "/t5/forums/postpage/choose-node/true/board-id/" + sourceBoard + "?source=header" />
+<#elseif (coreNode.nodeType == "grouphub") && (coreNode.permissions.hasPermission("create_thread"))>
+    <#assign sourceBoard = coreNode.id/>
+    <#assign postURL = "/t5/forums/postpage/choose-node/true/board-id/" + sourceBoard + "forum-board?source=header" />
 <#else>
     <#assign postURL = "/t5/forums/postpage/choose-node/true?source=header" />
 </#if>
